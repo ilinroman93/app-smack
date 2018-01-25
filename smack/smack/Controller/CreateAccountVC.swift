@@ -10,7 +10,7 @@ import UIKit
 
 class CreateAccountVC: UIViewController {
     
-    //Outlets
+    // Outlets
 
     @IBOutlet weak var usernameTxt: UITextField!
     
@@ -20,7 +20,18 @@ class CreateAccountVC: UIViewController {
     
     @IBOutlet weak var userImg: UIImageView!
     
+    // Variables
+    
+    var avatarName = "profileDefault"
+    
+    var avatarColor = "[0.5, 0.5, 0.5, 1]"
+    
     @IBAction func createAccBtnPressed(_ sender: Any) {
+        
+        guard let name = usernameTxt.text, usernameTxt.text != "" else {
+            return
+        }
+        
         guard let email = emailTxt.text, emailTxt.text != "" else {
             return
         }
@@ -33,7 +44,12 @@ class CreateAccountVC: UIViewController {
             if Success {
                 AuthService.instance.logIn(email: email, password: password, completion: { (Success) in
                     if Success {
-                        print("Logged in user!", AuthService.instance.authToken) 
+                        AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (Success) in
+                            if Success {
+                                print(UserDataService.instance.name, UserDataService.instance.avatarName)
+                                self.performSegue(withIdentifier: UNWIND, sender: nil)
+                            }
+                        })
                     }
                 })
             }
