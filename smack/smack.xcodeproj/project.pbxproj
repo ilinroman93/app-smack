@@ -19,6 +19,7 @@
 		304781392008773B005A51BC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304781382008773B005A51BC /* LoginVC.swift */; };
 		3047813B20087A8F005A51BC /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047813A20087A8F005A51BC /* CreateAccountVC.swift */; };
 		3047817F2019CC4E005A51BC /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047817E2019CC4E005A51BC /* AuthService.swift */; };
+		304781812019E2AB005A51BC /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304781802019E2AB005A51BC /* RoundedButton.swift */; };
 		F7EBE80F4FA62C085955F8B6 /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916F5D6A730564F88BED13B5 /* Pods_smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		304781382008773B005A51BC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3047813A20087A8F005A51BC /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		3047817E2019CC4E005A51BC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		304781802019E2AB005A51BC /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		916F5D6A730564F88BED13B5 /* Pods_smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE15DA07EF67B4ACD7BA8FA /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				3047813320072F3C005A51BC /* GradientView.swift */,
+				304781802019E2AB005A51BC /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30478132200729CA005A51BC /* ChannelVC.swift in Sources */,
+				304781812019E2AB005A51BC /* RoundedButton.swift in Sources */,
 				30478130200729B3005A51BC /* ChatVC.swift in Sources */,
 				3047813B20087A8F005A51BC /* CreateAccountVC.swift in Sources */,
 				3047817F2019CC4E005A51BC /* AuthService.swift in Sources */,
