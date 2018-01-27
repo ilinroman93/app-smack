@@ -23,6 +23,7 @@
 		30478183201A3078005A51BC /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30478182201A3078005A51BC /* UserDataService.swift */; };
 		30478185201C3890005A51BC /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30478184201C3890005A51BC /* AvatarPickerVC.swift */; };
 		30478187201C3D06005A51BC /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30478186201C3D06005A51BC /* AvatarCell.swift */; };
+		30478189201C6881005A51BC /* CirlceImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30478188201C6880005A51BC /* CirlceImage.swift */; };
 		F7EBE80F4FA62C085955F8B6 /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916F5D6A730564F88BED13B5 /* Pods_smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		30478182201A3078005A51BC /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		30478184201C3890005A51BC /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		30478186201C3D06005A51BC /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		30478188201C6880005A51BC /* CirlceImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirlceImage.swift; sourceTree = "<group>"; };
 		916F5D6A730564F88BED13B5 /* Pods_smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE15DA07EF67B4ACD7BA8FA /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				3047813320072F3C005A51BC /* GradientView.swift */,
 				304781802019E2AB005A51BC /* RoundedButton.swift */,
 				30478186201C3D06005A51BC /* AvatarCell.swift */,
+				30478188201C6880005A51BC /* CirlceImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				30478183201A3078005A51BC /* UserDataService.swift in Sources */,
 				3047813B20087A8F005A51BC /* CreateAccountVC.swift in Sources */,
 				3047817F2019CC4E005A51BC /* AuthService.swift in Sources */,
+				30478189201C6881005A51BC /* CirlceImage.swift in Sources */,
 				304781392008773B005A51BC /* LoginVC.swift in Sources */,
 				3047813420072F3C005A51BC /* GradientView.swift in Sources */,
 				30478187201C3D06005A51BC /* AvatarCell.swift in Sources */,
