@@ -26,6 +26,18 @@ class CreateAccountVC: UIViewController {
     
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
+    }
+    
     @IBAction func createAccBtnPressed(_ sender: Any) {
         
         guard let name = usernameTxt.text, usernameTxt.text != "" else {
@@ -57,6 +69,8 @@ class CreateAccountVC: UIViewController {
      }
     
     @IBAction func pickAvatarBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
+        
     }
     
     @IBAction func pickBgBtnPressed(_ sender: Any) {
@@ -66,15 +80,6 @@ class CreateAccountVC: UIViewController {
     @IBAction func closePressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
     }
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-
     
 
 }
