@@ -31,7 +31,12 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-
+    @IBAction func addChannelBtnPressed(_ sender: Any) {
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
