@@ -87,6 +87,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="wKg-dT-ihv" id="oiV-bg-5cT"/>
                         <outlet property="menuBtn" destination="whV-1o-lXe" id="spZ-Ss-Lgg"/>
                     </connections>
                 </viewController>
