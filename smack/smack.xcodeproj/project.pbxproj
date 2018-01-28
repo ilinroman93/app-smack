@@ -31,6 +31,7 @@
 		30478194201D977F005A51BC /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30478193201D977F005A51BC /* ChannelCell.swift */; };
 		30478197201D9DC4005A51BC /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30478195201D9DC4005A51BC /* AddChannelVC.swift */; };
 		30478198201D9DC4005A51BC /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30478196201D9DC4005A51BC /* AddChannelVC.xib */; };
+		3047819A201DA9DF005A51BC /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30478199201DA9DF005A51BC /* SocketService.swift */; };
 		F7EBE80F4FA62C085955F8B6 /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916F5D6A730564F88BED13B5 /* Pods_smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		30478193201D977F005A51BC /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		30478195201D9DC4005A51BC /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		30478196201D9DC4005A51BC /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		30478199201DA9DF005A51BC /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		916F5D6A730564F88BED13B5 /* Pods_smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE15DA07EF67B4ACD7BA8FA /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 				3047817E2019CC4E005A51BC /* AuthService.swift */,
 				30478182201A3078005A51BC /* UserDataService.swift */,
 				3047818F201D9022005A51BC /* MessageService.swift */,
+				30478199201DA9DF005A51BC /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3047819A201DA9DF005A51BC /* SocketService.swift in Sources */,
 				3047818C201CDB6F005A51BC /* ProfileVC.swift in Sources */,
 				30478194201D977F005A51BC /* ChannelCell.swift in Sources */,
 				30478132200729CA005A51BC /* ChannelVC.swift in Sources */,
