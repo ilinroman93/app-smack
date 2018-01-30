@@ -35,6 +35,12 @@
 		3047819C201DC596005A51BC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047819B201DC596005A51BC /* Message.swift */; };
 		3047819E201DE491005A51BC /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047819D201DE491005A51BC /* KeyboardBoundView.swift */; };
 		304781A0201DF4FE005A51BC /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047819F201DF4FE005A51BC /* MessageCell.swift */; };
+		304781AA201F03B3005A51BC /* EditAvatarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304781A9201F03B2005A51BC /* EditAvatarVC.xib */; };
+		304781AC201F03BD005A51BC /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304781AB201F03BD005A51BC /* EditProfileVC.xib */; };
+		304781AE201F03D5005A51BC /* EditAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304781AD201F03D5005A51BC /* EditAvatarVC.swift */; };
+		304781B0201F03E1005A51BC /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304781AF201F03E1005A51BC /* EditProfileVC.swift */; };
+		304781B3201F043A005A51BC /* EditAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304781B1201F043A005A51BC /* EditAvatarCell.swift */; };
+		304781B4201F043A005A51BC /* EditAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304781B2201F043A005A51BC /* EditAvatarCell.xib */; };
 		F7EBE80F4FA62C085955F8B6 /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916F5D6A730564F88BED13B5 /* Pods_smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +78,12 @@
 		3047819B201DC596005A51BC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3047819D201DE491005A51BC /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		3047819F201DF4FE005A51BC /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		304781A9201F03B2005A51BC /* EditAvatarVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditAvatarVC.xib; sourceTree = "<group>"; };
+		304781AB201F03BD005A51BC /* EditProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
+		304781AD201F03D5005A51BC /* EditAvatarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAvatarVC.swift; sourceTree = "<group>"; };
+		304781AF201F03E1005A51BC /* EditProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		304781B1201F043A005A51BC /* EditAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAvatarCell.swift; sourceTree = "<group>"; };
+		304781B2201F043A005A51BC /* EditAvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditAvatarCell.xib; sourceTree = "<group>"; };
 		916F5D6A730564F88BED13B5 /* Pods_smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE15DA07EF67B4ACD7BA8FA /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +157,8 @@
 				30478184201C3890005A51BC /* AvatarPickerVC.swift */,
 				3047818A201CDB6F005A51BC /* ProfileVC.swift */,
 				30478195201D9DC4005A51BC /* AddChannelVC.swift */,
+				304781AD201F03D5005A51BC /* EditAvatarVC.swift */,
+				304781AF201F03E1005A51BC /* EditProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +173,7 @@
 				30478188201C6880005A51BC /* CirlceImage.swift */,
 				30478193201D977F005A51BC /* ChannelCell.swift */,
 				3047819F201DF4FE005A51BC /* MessageCell.swift */,
+				304781B1201F043A005A51BC /* EditAvatarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +209,9 @@
 		3047818E201CDB93005A51BC /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				304781A9201F03B2005A51BC /* EditAvatarVC.xib */,
+				304781AB201F03BD005A51BC /* EditProfileVC.xib */,
+				304781B2201F043A005A51BC /* EditAvatarCell.xib */,
 				3047818B201CDB6F005A51BC /* ProfileVC.xib */,
 				30478196201D9DC4005A51BC /* AddChannelVC.xib */,
 			);
@@ -280,7 +298,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304781B4201F043A005A51BC /* EditAvatarCell.xib in Resources */,
 				30478198201D9DC4005A51BC /* AddChannelVC.xib in Resources */,
+				304781AA201F03B3005A51BC /* EditAvatarVC.xib in Resources */,
+				304781AC201F03BD005A51BC /* EditProfileVC.xib in Resources */,
 				3047818D201CDB6F005A51BC /* ProfileVC.xib in Resources */,
 				3047812020071EBA005A51BC /* LaunchScreen.storyboard in Resources */,
 				3047811D20071EBA005A51BC /* Assets.xcassets in Resources */,
@@ -354,6 +375,7 @@
 				3047819C201DC596005A51BC /* Message.swift in Sources */,
 				30478192201D904E005A51BC /* Channel.swift in Sources */,
 				30478130200729B3005A51BC /* ChatVC.swift in Sources */,
+				304781AE201F03D5005A51BC /* EditAvatarVC.swift in Sources */,
 				30478190201D9022005A51BC /* MessageService.swift in Sources */,
 				30478183201A3078005A51BC /* UserDataService.swift in Sources */,
 				3047813B20087A8F005A51BC /* CreateAccountVC.swift in Sources */,
@@ -362,6 +384,8 @@
 				304781392008773B005A51BC /* LoginVC.swift in Sources */,
 				30478197201D9DC4005A51BC /* AddChannelVC.swift in Sources */,
 				3047813420072F3C005A51BC /* GradientView.swift in Sources */,
+				304781B3201F043A005A51BC /* EditAvatarCell.swift in Sources */,
+				304781B0201F03E1005A51BC /* EditProfileVC.swift in Sources */,
 				30478187201C3D06005A51BC /* AvatarCell.swift in Sources */,
 				3047811620071EBA005A51BC /* AppDelegate.swift in Sources */,
 				3047812B20072700005A51BC /* SWRevealViewController.m in Sources */,

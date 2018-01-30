@@ -17,7 +17,9 @@ class UserDataService {
     public private(set) var avatarName = ""
     public private(set) var email = ""
     public private(set) var name = ""
-    
+    public private(set) var editedAvatarColor = ""
+    public private(set) var editedAvatarName = ""
+
     func setUserData(id: String, color: String, avatarName: String, email: String, name: String) {
         self.id = id
         self.avatarColor = color
@@ -74,5 +76,17 @@ class UserDataService {
         MessageService.instance.clearMessages()
     }
     
+    func setEditedAvatarColor(color: String) {
+        self.editedAvatarColor = color
+    }
     
+    func setEditedAvatarName(name: String) {
+        self.editedAvatarName = name
+    }
+    
+    func clearEditVariables() {
+        editedAvatarColor = ""
+        editedAvatarName = ""
+    }
+ 
 }

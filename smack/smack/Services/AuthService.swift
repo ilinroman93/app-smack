@@ -135,6 +135,30 @@ class AuthService {
         
     }
     
+    func updateUserInfo(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler) {
+        
+        let service = UserDataService.instance
+        
+        let lowerCaseEmail = email.lowercased()
+        
+        let body: [String: Any] = [
+            "name": name,
+            "email": lowerCaseEmail,
+            "avatarName": avatarName,
+            "avatarColor": avatarColor
+        ]
+        
+        Alamofire.request("\(URL_PUT_CHANGES_BY_ID)\(service.id)", method: .put, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            if response.result.error == nil {
+                UserDataService.instance.setUserData(id: service.id, color: avatarColor, avatarName: avatarName, email: email, name: name)
+                completion(true)
+            } else {
+                debugPrint(response.result.error as Any)
+                completion(false)
+            }
+        }
+    }
+    
     func setUserInfo(data: Data) {
         let json = try! JSON(data: data)
         let id = json["_id"].stringValue
